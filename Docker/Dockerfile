@@ -1,13 +1,11 @@
 FROM alpine:latest
 
-LABEL maintainer=”Russ McKendrick <russ@mckendrick.io>”
+LABEL maintainer=”Ramesh <ramesh@godishela.com>”
 
 LABEL description=”This example Dockerfile installs NGINX.”
 
 RUN apk add --update nginx && \
-
     rm -rf /var/cache/apk/* && \
-
     mkdir -p /tmp/nginx/
 
 COPY files/nginx.conf /etc/nginx/nginx.conf
