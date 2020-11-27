@@ -5,4 +5,3 @@
 4. [Ansible on GitHub](https://github.com/ansible/ansible) - The official Ansible code repository, where the magic happens.
 5. [Ansible Example Playbooks on GitHub](https://github.com/ansible/ansible-examples) - Many examples for common server configurations.
 6. [Getting Started with Ansible](https://www.ansible.com/resources/get-started) - A simple guide to Ansible’s community and resources.
-7. 
