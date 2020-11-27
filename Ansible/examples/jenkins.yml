@@ -1,0 +1,32 @@
+---
+- name: Install and start the Jenkins server
+  hosts: cm
+  connection: local
+  tasks:
+  - name: get the jenkins repo
+    get_url:
+      url: 'http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo'
+      dest: /etc/yum.repos.d/jenkins.repo
+
+  - name: import rpm key
+    rpm_key:
+      key: "https://jenkins-ci.org/redhat/jenkins-ci.org.key"
+      state: present
+      validate_certs: no
+  
+  - name: install java
+    yum:
+      name: java
+      state: present
+  
+  - name: install jenkins
+    yum:
+      name: jenkins
+      state: present
+
+  - name: start the service
+    service: 
+      name: jenkins
+      state: started
+      enabled: true
+
