@@ -52,12 +52,14 @@ list the local config details
 git config --list global
 ```
 list the local config values
-
+```
 cat .git/config
+```
 update the global config values
-git config --global user.name "Ra Go"
-git config --global user.email ramesh@godishela.com
-
+```
+git config --global user.name "your name"
+git config --global user.email "your email id"
+```
 verify the global configs have been updated
 ```
 git config -l --global
