@@ -1,5 +1,5 @@
 # ansible-automation
-This repo contains all the code and articles about the Ansible Automation Hyderabad meetups which is happened on Sep 7th 2019
+This repo contains all the code and articles 
 
 #### Agenda:
 
