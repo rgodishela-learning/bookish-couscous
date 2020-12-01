@@ -1,7 +1,4 @@
-Install Git
-```
-sudo yum install git -y
-```
+### Understand the Git Repo workflow using CLI
     
 Make a directory
 ```
@@ -46,24 +43,7 @@ git status
 commit the changes
 ```
 git commit -am "add readme.md files"
-```
-list the local config details
-```
-git config --list global
-```
-list the local config values
-```
-cat .git/config
-```
-update the global config values
-```
-git config --global user.name "your name"
-git config --global user.email "your email id"
-```
-verify the global configs have been updated
-```
-git config -l --global
-```
+
 commit readme.md files
 ```
 git commit -am "add readme.md files"
