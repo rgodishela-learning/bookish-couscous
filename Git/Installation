@@ -1,64 +1,81 @@
-    1  mkdir test-project
-  
-    4  cd test-project/
- 
-   11  echo "# super-duper-giggle" >> README.md
+Install Git
+```
+sudo yum install git -y
+```
+    
+Make a directory
+```
+mkdir test-project
+```
+login to the directory
+```
+cd test-project/
+```
+Create readme.md file
+```
+"# super-duper-giggle" >> README.md
+```
+Intiliaze the repo
+```
+git init
+```
+create test.md file
+```
+vim test.md
+```
+Check the status
+```
+git status
+```
+Stage the files
+```
+git add README.md
+```
+Check the status
+```
+git status
+```
+Stage all the files
+```
+git add -A
+```
+check the status
+```
+git status
+```
+commit the changes
+```
+git commit -am "add readme.md files"
+```
+list the local config details
+```
+git config --list global
+```
+list the local config values
 
-   13  cat README.md 
-   14  git init
- 
-   16  ls -la .git
- 
-   19  vim test.md
-   
-   21  git status
-   22  git add README.md
- 
-   24  git status
-   25  git add -A
+cat .git/config
+update the global config values
+git config --global user.name "Ra Go"
+git config --global user.email ramesh@godishela.com
 
-   27  git status
-   28  git commit -am "add readme.md files"
-   29  git config --list 
-   30  cat .git/config
-   31  git config --global user.name "Ra Go"
-   32  git config --global user.email ramesh@godishela.com
-   33  cat .git/config
-   34  git config --global
-   35  git config -l --global
-   36  cat .git/config
-   37  git commit -am "add readme.md files"
-
-   40  git push
-   41  git 
-   42  git log
-   43  git push 
-   44  echo "### test-not " >> test-not.md
- 
-   46  git status
-   47  git commit -am "add changes:
-   48  git commit -am "add changes"
-   49  git log
-   50  git push
-   51  git remote add origin https://github.com/rago-actions/super-duper-giggle.git
- 
-   53  git remote -r
-   54  git remote -v
-   55  git push 
-   56  git push -u origin main
-   57  git push --set-upstream origin master
-   58  ssh-keygen -t rsa 
-   59  cat /home/ec2-user/.ssh/id_rsa.pub
-
-   61  git push
-   62  git push --set-upstream origin master
-
-   64  git add test-not.md 
-   65  git status
-   66  git commit -am "add test-not file
-"
-   67  git log
-   68  git push
-  
-   70  git pull
+verify the global configs have been updated
+```
+git config -l --global
+```
+commit readmemd files
+```
+git commit -am "add readme.md files"
+```
+Add remote repo ref
+```
+git remote add origin https://github.com/rago-actions/super-duper-giggle.git
+```
+Check what are the remote ref urls
+```
+git remote -v
+```
+Set upstream branch
+```
+git push --set-upstream origin master
+```
  
