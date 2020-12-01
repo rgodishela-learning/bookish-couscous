@@ -64,7 +64,7 @@ verify the global configs have been updated
 ```
 git config -l --global
 ```
-commit readmemd files
+commit readme.md files
 ```
 git commit -am "add readme.md files"
 ```
