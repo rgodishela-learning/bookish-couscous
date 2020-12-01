@@ -70,7 +70,7 @@ git commit -am "add readme.md files"
 ```
 Add remote repo ref
 ```
-git remote add origin https://github.com/rago-actions/super-duper-giggle.git
+git remote add origin <your remote repo url>
 ```
 Check what are the remote ref urls
 ```
